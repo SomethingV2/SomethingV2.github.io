@@ -1,0 +1,63 @@
+<html>
+<script>
+answer_explanation="";
+
+function verifyAnswer(response_poll)
+{
+//alert(response_poll[0].value+" "+response_poll[1].value+" "+response_poll[2].value+" "+response_poll[3].value+" - "+response_poll[0].checked+" "+response_poll[1].checked+" "+response_poll[2].checked+" "+response_poll[3].checked+" ");
+	var correct_answer=false;
+	for(f=0;f<response_poll.length;f++)
+	{
+		if(response_poll[f].checked && response_poll[f].value==1) 
+		{
+			correct_answer=true; //the correct answer was selected
+		}
+	}
+	var expl_div=document.getElementById('explanation');
+	if(correct_answer) expl_div.innerHTML="Bravos natiune!!!"; else expl_div.innerHTML="nope...";
+	expl_div.innerHTML+="<br><br>"+answer_explanation;
+	
+
+}
+
+class askOneQuestion {
+	constructor(question_text,variants_array,correct_answer, explanation)
+	{
+		//store text to global variable answer_explanation to be written after a response is sent
+		answer_explanation=explanation;
+	
+		//store parameters into private vars
+		this.correct_answer=correct_answer;
+		this.wholetext="";
+		
+		//format the question text by adding: question, all answers, a div for future explanations
+		this.wholetext+="<p1>"+question_text+"</p1>";
+		this.wholetext+="<br><br>";
+		for(var f=0;f<variants_array.length;f++) this.addOneAnswer(variants_array[f],f==correct_answer?1:0);
+		
+		this.wholetext+="<br><button type='button' onclick='verifyAnswer(document.getElementsByName(\"choose_answer\"));'>Trimite raspuns</button>";
+		this.wholetext+="<br><br><div id='explanation'> Select your answer...</div>";
+	}
+	
+	addOneAnswer(answer_text, is_correct)
+	{
+		this.wholetext+="<input type='radio' name='choose_answer'  value='"+is_correct+"'>"+answer_text+"</p1>";
+		this.wholetext+="<br>";
+	}
+	
+	getFormattedText()
+	{
+		return this.wholetext;
+	}
+	
+
+}
+
+</script>
+<body> 
+<script>
+var formatted_question_html=new askOneQuestion("Ce parere ai de raspunsurile astea",["Mi se rupe","Habar n-am","Sunt excelente","Imi plac","de unde sa stiu"],2,"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 3-lea :)");
+document.write(formatted_question_html.getFormattedText());
+</script>
+</body>
+</html>
