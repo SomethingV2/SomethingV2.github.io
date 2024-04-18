@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/background.css">
+<link rel="stylesheet" href="css/text-home.css">
+<link rel="stylesheet" href="css/slider.css">
+<html>
+    <body>
+        
+    <div class="slider-container">
+        <div class="slider">
+          <img src="poze/1.jpg" alt="Image 1" class="active">
+          <img src="poze/2.jpg" alt="Image 2">
+          <img src="poze/3.jpg" alt="Image 3">
+          <img src="poze/1.jpg" alt="Image 1" style="z-index: -1;">
+          <h1>Cyber Security</h1>
+        </div>
+      </div>
+    </section>
+    <script>
+      const slider = document.querySelector('.slider');
+      const images = slider.querySelectorAll('img');
+      let index = 0;
+      function showImage(index) {
+        images.forEach((image, i) => {
+          if (i === index || (i === images.length - 1 && index === 0)) {
+            image.style.opacity = '1';
+          } else {
+            image.style.opacity = '0';
+          }
+        });
+      }
+      function nextImage() {
+        index = (index + 1) % images.length;
+        showImage(index);
+      }
+      setInterval(nextImage, 8000); /* la fiecare 3 sec se schimba imaginea */
+    </script>
+  
+    </body>
+</html>
