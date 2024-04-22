@@ -1,0 +1,18 @@
+.layout1{
+    display: block;
+    position: relative;
+    margin-top: 50%;
+    margin-left: 15%;
+    padding: 0%;
+}
+.text1{
+    display: block;
+    position: absolute;
+    margin-top: -27.5%;
+    margin-left: 20%;
+    margin-right: 35%;
+}
+.text1{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
