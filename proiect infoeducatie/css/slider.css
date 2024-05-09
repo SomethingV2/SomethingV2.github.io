@@ -1,12 +1,11 @@
 .slider-container {
-    position: fixed;
-    top:0;
+    position: absolute;
+    top:0%;
     width: 100%;
-    height: calc(((15vw * 0.625) * 3) + 20px);
-    /* Aspect ratio de 16:10 și 50% din h */
+    height: calc(((15vw * 0.625) * 4) + 30px);
     overflow: hidden;
     margin:0;
-    padding: 0;
+    padding: 0px;
     left: 0;
 
 
@@ -39,10 +38,9 @@
 
   h1{
     text-align: center;
-    margin-top: 80px;
     font-size: 80px;
     font-family: monospace;
     position: relative;
-    color: rgb(244, 248, 143);
-    margin-top: 180px;
+    color: rgb(255, 0, 0);
+    margin-top: 250px;
 }

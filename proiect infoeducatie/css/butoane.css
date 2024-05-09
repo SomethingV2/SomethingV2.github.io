@@ -1,0 +1,144 @@
+.button1{
+    background-color: rgb(206, 198, 187);; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+} 
+.button1:hover span {
+    padding-right: 25px;
+} 
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button1:hover {
+    background-color: #000000;
+    color: white;
+}  
+.but1{
+    position: absolute;
+    margin-top: -7.6%;    
+    margin-left: 32%;
+}
+
+
+
+
+
+
+.button2{
+    background-color: rgb(206, 198, 187);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+} 
+.button2:hover span {
+    padding-right: 25px;
+} 
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button2:hover {
+    background-color: #000000;
+    color: white;
+}  
+.but2{
+    position: relative;
+    margin-top: 0%;    
+    margin-left: 32%;
+    margin-bottom: 50%;
+}
+
+
+
+
+
+
+
+
+.button3{
+    background-color: rgb(206, 198, 187);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button3 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+} 
+.button3:hover span {
+    padding-right: 25px;
+} 
+.button3:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button3:hover {
+    background-color: #000000;
+    color: white;
+}  
+.but3{
+    position: relative;
+    margin-top: -7.6%;    
+    margin-left: 32%;
+}

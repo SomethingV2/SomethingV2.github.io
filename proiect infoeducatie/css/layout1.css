@@ -1,0 +1,26 @@
+.poza1 {
+    display: block;
+    position: relative;
+    margin-top: 50%;
+    margin-left: 15%;
+}
+
+.text1 {
+    display: block;
+    position: absolute;
+    margin-top: -18.5%;
+    margin-left: 32%;
+    margin-right: 31.2%;
+}
+
+.text1 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titlu1 {
+    position: absolute;
+    margin-top: -22.5%;
+    margin-left: 33%;
+    font-size: 40px;
+}
