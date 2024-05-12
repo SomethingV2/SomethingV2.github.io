@@ -14,7 +14,7 @@
 .home-1 span {
     cursor: pointer;
     display: inline-block;
-    position: absolute;
+    position: relative;
     transition: 0.5s;
 }
 .home1{
