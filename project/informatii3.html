@@ -39,7 +39,7 @@
       <h1>Link-uri primite prin platforme de social media</h1>
     </div>
     <hr>
-    <p>Browserele și sistemele de operare își îmbunătățesc securitatea și capacitatea de a detecta site-urile false în fiecare zi, dar nu același lucru se poate spune despre utilizator. Să presupunem că ai primit print e-mail un mesaj în care ești anunțat că poștașul nu te-a găsit acasă ca să îți livreze un colet. Ce faci cu el? Păi, în primul rând, adu-ți aminte dacă aștepți sau nu un colet. În al doilea rând, întreabă-te de unde are Poșta Română adresa ta de e-mail. În al treilea rând, mesajul îți este adresat ție cu nume și prenume ori este un mesaj generic, gen ”Stimate utilizator al serviciilor noastre...”? Dacă niciuna dintre aceste întrebări nu ți-a ridicat suspiciuni, ai putea deschide link-ul primit, dar mai departe mai apar o serie de întrebări: link-ul primit este sau nu al poștei? </p>
+    <p>Browserele și sistemele de operare își îmbunătățesc securitatea și capacitatea de a detecta site-urile false în fiecare zi, dar nu același lucru se poate spune despre utilizator. Să presupunem că ai primit prin e-mail un mesaj în care ești anunțat că poștașul nu te-a găsit acasă ca să îți livreze un colet. Ce faci cu el? Păi, în primul rând, adu-ți aminte dacă aștepți sau nu un colet. În al doilea rând, întreabă-te de unde are Poșta Română adresa ta de e-mail. În al treilea rând, mesajul îți este adresat ție cu nume și prenume ori este un mesaj generic, gen ”Stimate utilizator al serviciilor noastre...”? Dacă niciuna dintre aceste întrebări nu ți-a ridicat suspiciuni, ai putea deschide link-ul primit, dar mai departe mai apar o serie de întrebări: link-ul primit este sau nu al poștei? </p>
     <p>De exemplu, ce părere ai despre acest link: <a href="">https://www.posta-romana.ro@posta-romana-online-romania.blogspot.com/clienti/colete/userid=766</a> ? Este un link valid? La prima vedere așa pare: are https și nu http, are exact domeniul pe care-l știi și anume poșta-romana.ro, are chiar și o terminație din domeniul .com. Din păcate, dacă l-ai considerat valid, ai greșit. Puțini utilizatori de internet știu semnificația caracterului @ din link-ul de mai sus: el este folosit pentru a specifica numele de utilizator, în cazul nostru numele de utilizator fiind <a href="">www.posta-romana.ro</a> ce se conectează la site-ul <a href="">posta-romana-online-romania.blogspot.com</a>. Ce se găsește după primul / nu mai este relevant, deoarece aceasta ar trebui să specifice pagina ori subpagina pe care vrem să o accesăm din acel domeniu fake. </p>
     <p>De reținut: verifică cu atenție unde te trimit link-urile primite prin e-mail</p>
 
@@ -71,19 +71,19 @@
         new askOneQuestion("Deși nu aștepți niciun colet, ai primit în căsuța ta de e-mail un mesaj care te informează că nu ai putut fi contactat de curier pentru livrarea unui pachet și ești invitat să accesezi un link pentru a confirma datele de livrare. Îl accesezi?",
           ["Da", "Nu"],
           2,
-          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 3-lea :)"),
+          "Dacă nu aștepți niciun colet, nu ar ridica câteva întrebări faptul că ai primit un mail despre coletul tău ?"),
         new askOneQuestion("În momentul în care încerci să deschizi pagina, îți apare în browser eroarea ”Lipsă conexiune la internet”. Este aceasta o încercare de a-ți fura datele personale? ",
           ["Da", "Nu"],
           2,
-          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este primul :)"),
+          "”Lipsă conexiune la internet” înseamnă că ți-ai pierdut conexiunea la internet."),
         new askOneQuestion("Pentru a nu uita parolele pe care le-ai setat:",
           ["vei folosi aceeași parolă la toate site-urile ", "vei folosi un manager de parole", "vei seta parole ușor de reținut, cum ar fi numele tău și data nașterii"],
           2,
-          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+          "Dacă folosești aceeași parolă peste tot atunci trebuie spartă doar odată, iar parolele ușor de reținut sunt sparte foarte repede"),
         new askOneQuestion("Care din următoarele adrese web îți ridică suspiciuni privind autenticitatea? ",
           ["https://www.posta-romana.ro", "https://www.brico-depot.ro/customer/startpage/viev_product?id=17775 ", "https://olx-romania-online.myfreewebsite.com "],
           3,
-          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+          "Primul link este al poștei române, al doilea este al unui produs de pe site-ul celor de la brico, iar al treilea te duce spre un site făcut cu ajutorul MyFreeWebsite, unde oricine poate să facă o pagină web și să o numească oricum dorește."),
       ];
   
       //write formatted questions into web page
