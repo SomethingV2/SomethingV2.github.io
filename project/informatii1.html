@@ -3,7 +3,11 @@
 <link rel="stylesheet" href="css info1/text.css">
 <link rel="stylesheet" href="css info1/butoane-head.css">
 <link rel="stylesheet" href="css info1/layout1.css">
+<script src="javascript/quiz.js"></script>
 <html>
+    <script>
+        
+    </script>
 
 <body>
     <div class="colorbox"></div>
@@ -46,7 +50,7 @@
             <p>- De ce calculatorul meu merge așa de greu deși procesorul rulează la 100%? </p>
             <p>În zilele noastre toată lumea folosește un calculator sau un telefon smart pentru a comunica cu cei dragi, pentru a-și lua informațiile și stirile de care are nevoie ori pentru a face plăți contactless. Tehnologia a evoluat și, odată cu ea,
                 și posibilitățile utilizatorilor de a comite erori cu consecințe foarte neplăcute. Dacă la începutul erei informaticii securitatea era oarecum garantată de faptul că doar cei ce aveau cunoștințe avansate de informatică puteau folosi un
-                calculator, astăzi oricine are posibilitatea de a folosi un smart-device pe de pe care să comunice, să cumpere online, să facă plăți cu cardul și așa mai departe. Deși creatorii de software au luat măsuri pentru securizarea datelor folosite
+                calculator, astăzi oricine are posibilitatea de a folosi un smart-device de pe care să comunice, să cumpere online, să facă plăți cu cardul și așa mai departe. Deși creatorii de software au luat măsuri pentru securizarea datelor folosite
                 și transmise de utilizatori, din păcate tocmai neștiința acestora din urmă duce la consecințe nefaste. Proiectul nostru își propune să sintetizeze bunele practici și să aducă utilizatorilor cunoștințe noi, pe care le pot folosi în activitatea
                 lor online.</p>
             <div class="h2">
@@ -101,11 +105,57 @@
             <p>Deși în zilele noastre regula este ca toate comunicațiile prin internet să se facă prin intermediul conexiunilor HTTPS, trebuie menționat faptul că înaintea acestuia a existat protocolul HTTP, Hypertext Transfer Protocol, care nu este criptat
                 și prin urmare nu este sigur împotriva interceptării. El mai este încă utilizat în situații punctuale, mai ales acolo unde datele transmise nu sunt confidențiale sau sensibile.</p>
             <p>De reținut: nu trimite date sensibile dacă site-ul la care te-ai conectat nu folosește o conexiune sigură.</p>
+            <br>
+            <h1>Quiz</h1>
+            <br>
+	    <div id="total_progress"> Raspunsuri corecte pana acum:...</div>
+	    <hr>
+	    <script>
+		//all questions are defined here:
+		var quiz = [
+			new askOneQuestion("Internet-ul este: ",
+				["un browser ", "un motor de căutare", "o rețea ", "o conexiune wireless"],
+				3,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 3-lea :)"),
+			new askOneQuestion("Bing este un browser? ",
+				["Da", "Nu"],
+				2,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este primul :)"),
+			new askOneQuestion("Dacă avem nevoie să găsim informații pe internet, vom folosi:",
+				["un motor de căutare ", "o adresă TCP", "IPv4 ", "o adresă IPv6"],
+				1,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este 1"),
+            new askOneQuestion("Care dintre următoarele nu este un browser?",
+                ["Chrome","Edge","Bing","Firefox"],
+                3,
+                "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 3-lea :)"),
+            new askOneQuestion(" Transformarea numelui într-o adresă IP este responsabilitatea: ",
+				["serverului WEB ", "serverului DNS", "protocolului HTTPS"],
+				2,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+            new askOneQuestion("Dintre următoarele protocoale, cel mai sigur este: ",
+				["https", "http"],
+				1,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+            new askOneQuestion("Internetul are la bază protocolul",
+				["TCP", "IPv4", "World Wide Web ", "Instagram"],
+				2,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+            new askOneQuestion("Verificarea autenticității unui server se face folosind:",
+				["un nume de utilizator și o parolă complexă", "un certificat digital ", "o adresă de IP ", "un server DNS"],
+				5,
+				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+                
+		];
+
+		//write formatted questions into web page
+		for (f = 0; f < quiz[0].getTotalInstances(); f++) {
+			document.write(quiz[f].getFormattedText());
+		}
+	    </script>
         </div>
 
     </div>
-
-
 
 </body>
 

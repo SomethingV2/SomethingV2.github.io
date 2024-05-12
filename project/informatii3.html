@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="css info3/text.css">
 <link rel="stylesheet" href="css info3/butoane-head.css">
 <link rel="stylesheet" href="css info3/layout3.css">
+<script src="javascript/quiz.js"></script>
 <html>
     <body>
 
@@ -39,7 +40,7 @@
     </div>
     <hr>
     <p>Browserele și sistemele de operare își îmbunătățesc securitatea și capacitatea de a detecta site-urile false în fiecare zi, dar nu același lucru se poate spune despre utilizator. Să presupunem că ai primit print e-mail un mesaj în care ești anunțat că poștașul nu te-a găsit acasă ca să îți livreze un colet. Ce faci cu el? Păi, în primul rând, adu-ți aminte dacă aștepți sau nu un colet. În al doilea rând, întreabă-te de unde are Poșta Română adresa ta de e-mail. În al treilea rând, mesajul îți este adresat ție cu nume și prenume ori este un mesaj generic, gen ”Stimate utilizator al serviciilor noastre...”? Dacă niciuna dintre aceste întrebări nu ți-a ridicat suspiciuni, ai putea deschide link-ul primit, dar mai departe mai apar o serie de întrebări: link-ul primit este sau nu al poștei? </p>
-    <p>De exemplu, ce părere ai despre acest link: <a href="https://www.posta-romana.ro@posta-romana-online-romania.blogspot.com/clienti/colete/userid=766">https://www.posta-romana.ro@posta-romana-online-romania.blogspot.com/clienti/colete/userid=766</a> ? Este un link valid? La prima vedere așa pare: are https și nu http, are exact domeniul pe care-l știi și anume poșta-romana.ro, are chiar și o terminație din domeniul .com. Din păcate, dacă l-ai considerat valid, ai greșit. Puțini utilizatori de internet știu semnificația caracterului @ din link-ul de mai sus: el este folosit pentru a specifica numele de utilizator, în cazul nostru numele de utilizator fiind <a href="">www.posta-romana.ro</a> ce se conectează la site-ul <a href="">posta-romana-online-romania.blogspot.com</a>. Ce se găsește după primul / nu mai este relevant, deoarece aceasta ar trebui să specifice pagina ori subpagina pe care vrem să o accesăm din acel domeniu fake. </p>
+    <p>De exemplu, ce părere ai despre acest link: <a href="">https://www.posta-romana.ro@posta-romana-online-romania.blogspot.com/clienti/colete/userid=766</a> ? Este un link valid? La prima vedere așa pare: are https și nu http, are exact domeniul pe care-l știi și anume poșta-romana.ro, are chiar și o terminație din domeniul .com. Din păcate, dacă l-ai considerat valid, ai greșit. Puțini utilizatori de internet știu semnificația caracterului @ din link-ul de mai sus: el este folosit pentru a specifica numele de utilizator, în cazul nostru numele de utilizator fiind <a href="">www.posta-romana.ro</a> ce se conectează la site-ul <a href="">posta-romana-online-romania.blogspot.com</a>. Ce se găsește după primul / nu mai este relevant, deoarece aceasta ar trebui să specifice pagina ori subpagina pe care vrem să o accesăm din acel domeniu fake. </p>
     <p>De reținut: verifică cu atenție unde te trimit link-urile primite prin e-mail</p>
 
    
@@ -59,6 +60,38 @@
     <p>Poate că ai conturi pe Instagram, Gmail, Yahoo, Olx și pe multe alte site-uri. De asemenea, poate că ți-ai făcut cont și pe <a href="">www.magazinul-din-colt.ro</a> ca să cumperi un pachet de biscuiți. Tu ai o parolă complexă, imposibil de ghicit, pe care o știi doar tu și pe care ai folosit-o pe toate aceste site-uri. Dar ce se întâmplă dacă baza de date a magazinului din colț a fost spartă și hackerii au făcut rost de datele pe care tu le-ai furnizat când ți-ai cumpărat pachetul de biscuiți? Nici o problemă o să te gândești, că oricum n-aveam de gând să mai cumpăr de la ei. Nimic mai fals: pe hackeri nu-i interesează pachetul de biscuiți ci faptul că cu adresa de e-mail și cu parola de acolo vor încerca să intre pe Instagram, Gmail, Facebook, Emag sau Olx. Ups! aveai aceeași parolă la toate, nu-i așa? Am zis corect că aveai, pentru că din momentul în care ei au reușit să-ți acceseze unul din aceste conturi, deja ți-au schimbat parola, ti-au modificat numărul de telefon la care puteai s-o recuperezi, ți-au șters celelalte adrese de e-mail de recuperare și așa mai departe. Pe lângă frustrarea pe care o s-o simți că nu-ți vei mai putea accesa conturile, o să observi poate că pe Facebook Marketplace a apărut, postat de pe contul tău, un anunț de vânzare a unei mașini. Sau poate te vor suna prietenii să te întrebe ce-i cu mail-urile alea trimise de tine, în care îi inviți să cumpere Iphone 15 ProMax cu 12 lei iar tu habar n-ai ce explicații să le dai. Sau poate o să observi că nu mai ai bani pe card deoarece ai comandat ceva de pe Emag, ai plătit cu cardul salvat la ei iar produsele au fost deja livrate la altă adresă.</p>
     <p>Ca să eviți astfel de situații, folosește un manager de parole. De asemenea, unde este posibil, folosește autentificarea în 2 pași: asta înseamnă că pe lângă faptul că trebuie să știi parola pe care ai setat-o pe un site, vei folosi încă o opțiune suplimentară cum ar fi primirea unui cod prin SMS pe telefon, introducerea unui cod generat de un autentificator sau confirmarea autentificării de pe un dispozitiv deja autentificat.</p>
     <p>De reținut: Nu folosi aceeași parolă pentru mai multe site-uri. Nu folosi parole ușor de ghicit care să includă numele tău sau data nașterii, cuvinte din dicționar sau cele mai folosite parole din lume cum ar fi admin, password sau 123456.</p>
+    <br>
+    <h1>Quiz</h1>
+    <br>
+    <div id="total_progress"> Raspunsuri corecte pana acum:...</div>
+	    <hr>
+    <script>
+      //all questions are defined here:
+      var quiz = [
+        new askOneQuestion("Deși nu aștepți niciun colet, ai primit în căsuța ta de e-mail un mesaj care te informează că nu ai putut fi contactat de curier pentru livrarea unui pachet și ești invitat să accesezi un link pentru a confirma datele de livrare. Îl accesezi?",
+          ["Da", "Nu"],
+          2,
+          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 3-lea :)"),
+        new askOneQuestion("În momentul în care încerci să deschizi pagina, îți apare în browser eroarea ”Lipsă conexiune la internet”. Este aceasta o încercare de a-ți fura datele personale? ",
+          ["Da", "Nu"],
+          2,
+          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este primul :)"),
+        new askOneQuestion("Pentru a nu uita parolele pe care le-ai setat:",
+          ["vei folosi aceeași parolă la toate site-urile ", "vei folosi un manager de parole", "vei seta parole ușor de reținut, cum ar fi numele tău și data nașterii"],
+          2,
+          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+        new askOneQuestion("Care din următoarele adrese web îți ridică suspiciuni privind autenticitatea? ",
+          ["https://www.posta-romana.ro", "https://www.brico-depot.ro/customer/startpage/viev_product?id=17775 ", "https://olx-romania-online.myfreewebsite.com "],
+          3,
+          "Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
+      ];
+  
+      //write formatted questions into web page
+      for (f = 0; f < quiz[0].getTotalInstances(); f++) {
+        document.write(quiz[f].getFormattedText());
+      }
+    </script>
+  </div>
 </div>
 
     </body>

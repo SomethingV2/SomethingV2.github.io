@@ -1,7 +1,7 @@
 .text1 {
     display: block;
     position: absolute;
-    margin-top: 30%;
+    margin-top: 26.95%;
     margin-left: 12%;
     margin-right: 30%;
 }
@@ -35,4 +35,10 @@ hr {
 .h2 {
     font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    height: 75px;
+    width: 175px;
+    font-size: 25px;
 }

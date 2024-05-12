@@ -1,11 +1,3 @@
-<style>
-	p{
-		font-size: 2em;
-	}
-</style>
-<html>
-<script>
-
 	/*****************************************************************
 	Function name: 		updateTotalProgress()
 	Description:		Update total progress of this quiz
@@ -102,11 +94,11 @@
 
 			//format the question text by adding: question, all answers, a div for future explanations
 			this.wholetext += "<p>" + (this.class_idx + 1) + ". " + question_text + "</p>";
-			this.wholetext += "<br><br>";
+			this.wholetext += "";
 			for (var f = 0; f < variants_array.length; f++) this.#addOneAnswer(variants_array[f], f == this.correct_answer ? 1 : 0);
 
 			//this.wholetext += "<br><button type='button' onclick='verifyAnswer2(document.getElementsByName(\"choose_answer_" + this.class_idx + "\"));'>Trimite raspuns</button>";
-			this.wholetext += "<br><button type='button' onclick='verifyAnswer(" + this.class_idx + ");'>Verifica-ma!</button>";
+			this.wholetext += "<br><button type='button' onclick='verifyAnswer(" + this.class_idx + ");'>Verifica-mă!</button>";
 			this.wholetext += "<br><br><div id='explanation" + this.class_idx + "'> Select your answer...</div>";
 
 			this.answer_submitted = false;
@@ -143,36 +135,3 @@
 		}
 
 	} //end class
-
-</script>
-
-<body>
-	<p1> Quiz for this chapter</p1>
-	<br>
-	<div id="total_progress"> Raspunsuri corecte pana acum:...</div>
-	<hr>
-	<script>
-		//all questions are defined here:
-		var quiz = [
-			new askOneQuestion("Ce parere ai de raspunsurile astea",
-				["Mi se rupe", "Habar n-am", "Sunt excelente", "Imi plac"],
-				3,
-				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 3-lea :)"),
-			new askOneQuestion("Ce parere ai de raspunsurile astea 2",
-				["Mi se rupe", "Habar n-am", "Sunt excelente", "Imi plac"],
-				1,
-				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este primul :)"),
-			new askOneQuestion("Ce parere ai de raspunsurile astea 3",
-				["Mi se rupe", "Habar n-am", "Sunt excelente", "Imi plac", "N-am idee..."],
-				5,
-				"Aici sunt explicatiile cu ce ai gresit. Raspunsul corect este al 5-lea :)"),
-		];
-
-		//write formatted questions into web page
-		for (f = 0; f < quiz[0].getTotalInstances(); f++) {
-			document.write(quiz[f].getFormattedText());
-		}
-	</script>
-</body>
-
-</html>
