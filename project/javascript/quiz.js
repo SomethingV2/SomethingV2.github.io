@@ -99,7 +99,7 @@
 
 			//this.wholetext += "<br><button type='button' onclick='verifyAnswer2(document.getElementsByName(\"choose_answer_" + this.class_idx + "\"));'>Trimite raspuns</button>";
 			this.wholetext += "<br><button type='button' onclick='verifyAnswer(" + this.class_idx + ");'>Verifica-mă!</button>";
-			this.wholetext += "<br><br><div id='explanation" + this.class_idx + "'> Alegeți un răspuns...</div>";
+			this.wholetext += "<br><br><div id='explanation" + this.class_idx + "'> Alegeți un răspuns...</div><br><br>";
 
 			this.answer_submitted = false;
 			this.answer_is_correct = 0;
