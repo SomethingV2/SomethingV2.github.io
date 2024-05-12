@@ -42,7 +42,7 @@
 
 .informatii2{
     position: absolute;
-    margin-top: -4.4%;
+    margin-top: -4.35%;
     margin-left: 7.5%;
 }
 
@@ -64,13 +64,9 @@
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.informatii-3 span {
-    cursor: pointer;
-    display: inline-block;
-    position: absolute;
-}
+
 .informatii3{
     position: absolute;
-    margin-top: -4.4%;
+    margin-top: -4.35%;
     margin-left: 17%;
 }
