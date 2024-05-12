@@ -16,7 +16,7 @@
 
 		//update progress div info
 		let progress_div = document.getElementById('total_progress');
-		progress_div.innerHTML = "Raspunsuri corecte pana acum: " + total_correct_responses + " / " + total_responses_sent + ", total intrebari " + quiz[0].getTotalInstances();
+		progress_div.innerHTML = "Răspunsuri corecte până acum: " + total_correct_responses + " / " + total_responses_sent + ", total întrebari " + quiz[0].getTotalInstances();
 
 	}
 
@@ -39,7 +39,7 @@
 		}
 
 		//update question div with information
-		if (correct_answer) expl_div.innerHTML = "Bravos natiune!!!"; else expl_div.innerHTML = "nope...";
+		if (correct_answer) expl_div.innerHTML = "Corect!"; else expl_div.innerHTML = "Greșit";
 		expl_div.innerHTML += "<br><br>" + quiz[qindex].explanation;
 
 		//mark response sent for this question and add it to total progress
@@ -48,10 +48,10 @@
 
 		//update question div if the user change its mind and select another response
 		if (correct_answer && quiz[qindex].correct == 0) {
-			expl_div.innerHTML += "<br><br>Din pacate, primul tau raspuns la aceasta intrebare a fost gresit si nu o vom calcula la numarul total de raspunsuri corecte";
+			expl_div.innerHTML += "<br><br>Din păcate, primul tău răspuns la aceasta intrebare a fost greșit și nu îl vom calcula la numărul total de răspunsuri corecte";
 		}
 		if (!correct_answer && quiz[qindex].correct == 1) {
-			expl_div.innerHTML += "<br><br>Prima data ai raspuns corect; de ce ai schimbat raspunsul?";
+			expl_div.innerHTML += "<br><br>Prima dată ai răspuns corect; de ce ai schimbat răspunsul?";
 		}
 
 		//also update total progress
@@ -99,7 +99,7 @@
 
 			//this.wholetext += "<br><button type='button' onclick='verifyAnswer2(document.getElementsByName(\"choose_answer_" + this.class_idx + "\"));'>Trimite raspuns</button>";
 			this.wholetext += "<br><button type='button' onclick='verifyAnswer(" + this.class_idx + ");'>Verifica-mă!</button>";
-			this.wholetext += "<br><br><div id='explanation" + this.class_idx + "'> Select your answer...</div>";
+			this.wholetext += "<br><br><div id='explanation" + this.class_idx + "'> Alegeți un răspuns...</div>";
 
 			this.answer_submitted = false;
 			this.answer_is_correct = 0;
