@@ -10,26 +10,23 @@
     </script>
 
 <body>
-    <div class="colorbox"></div>
+    <div class="colorbox1"></div>
 
-    <div class="butoane-h">
-        <div class="home">
-            <a href="index.html">
-                <button class="home-1"><span>Home</span></button>
+        <div class="container"> 
+            <a href="index.html" target="_self">
+              <button class="button button1">Home</button>   
             </a>
-        </div>
+            <a href="informatii2.html" target="_self">
+                 <button class="button button2">Fake─uri</button>   
+               </a>
+            <a href="informatii3.html" target="_self">
+                 <button class="button button3">Securitate</button>   
+               </a>
+        </div> 
 
-        <div class="informatii2">
-            <a href="informatii2.html">
-                <button class="informatii-2"><span>Fake─uri</span></button>
-            </a>
-        </div>
 
-        <div class="informatii3">
-            <a href="informatii3.html">
-                <button class="informatii-3"><span>Securitate</span></button>
-            </a>
-        </div>
+
+
     </div>
     <div class="titlu">
         <p>Introducere</p>
@@ -155,8 +152,33 @@
 	    </script>
         </div>
 
-    </div>
 
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><span>&#8679;</span></button>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <div class="colorbox2"></div>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
-.home-1{
+.button1{
     background-color: rgb(0, 0, 0);; 
     border: none;
     color: rgb(255, 255, 255);
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -10,64 +10,43 @@
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.home-1 span {
-    cursor: pointer;
+
+  }
+  .button2{
+    background-color: rgb(0, 0, 0);; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  .button3{
+    background-color: rgb(0, 0, 0);; 
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  
+
+
+.container { 
+    display: flex; 
+    justify-content: space-evenly; 
     position: relative;
-    transition: 0.5s;
-}
-.home1{
-    position: absolute;
-    margin-top: 0%;    
     margin-left: 0%;
-}
-
-
-
-
-
-.informatii-1{
-    background-color: rgb(0, 0, 0);; 
-    border: none;
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.informatii1{
-    position: absolute;
-    margin-top: -4.35%;
-    margin-left: 7.5%;
-}
-
-
-
-
-
-
-.informatii-2{
-    background-color: rgb(0, 0, 0);; 
-    border: none;
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.informatii2{
-    position: absolute;
-    margin-top: -4.35%;
-    margin-left: 17%;
-}
+    margin-right: 80%;
+} 
