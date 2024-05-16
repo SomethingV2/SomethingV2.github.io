@@ -98,7 +98,7 @@
 			for (var f = 0; f < variants_array.length; f++) this.#addOneAnswer(variants_array[f], f == this.correct_answer ? 1 : 0);
 
 			//this.wholetext += "<br><button type='button' onclick='verifyAnswer2(document.getElementsByName(\"choose_answer_" + this.class_idx + "\"));'>Trimite raspuns</button>";
-			this.wholetext += "<br><button type='button' onclick='verifyAnswer(" + this.class_idx + ");'>Verifica-mă!</button>";
+			this.wholetext += "<br><button type='button' onclick='verifyAnswer(" + this.class_idx + ");'>Verifică</button>";
 			this.wholetext += "<br><br><div id='explanation" + this.class_idx + "'> Alegeți un răspuns...</div><br><br>";
 
 			this.answer_submitted = false;

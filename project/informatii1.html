@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="css info1/text.css">
 <link rel="stylesheet" href="css info1/butoane-head.css">
 <link rel="stylesheet" href="css info1/layout1.css">
-<script src="javascript/quiz.js"></script>
 <html>
     <script>
         
@@ -103,57 +102,6 @@
                 și prin urmare nu este sigur împotriva interceptării. El mai este încă utilizat în situații punctuale, mai ales acolo unde datele transmise nu sunt confidențiale sau sensibile.</p>
             <p>De reținut: nu trimite date sensibile dacă site-ul la care te-ai conectat nu folosește o conexiune sigură.</p>
             <br>
-            <h1>Quiz</h1>
-            <br>
-	    <div id="total_progress"> Raspunsuri corecte pana acum:...</div>
-	    <hr>
-	    <script>
-		//all questions are defined here:
-		var quiz = [
-			new askOneQuestion("Internet-ul este: ",
-				["un browser ", "un motor de căutare", "o rețea ", "o conexiune wireless"],
-				3,
-				"Internetul reprezintă o rețea globală de comunicații."),
-			new askOneQuestion("Bing este un browser? ",
-				["Da", "Nu"],
-				2,
-				"La fel ca google, un alt motor de căutare aproape la fel de puternic este Bing, administrat de Microsoft."),
-			new askOneQuestion("Dacă avem nevoie să găsim informații pe internet, vom folosi:",
-				["un motor de căutare ", "o adresă TCP", "IPv4 ", "o adresă IPv6"],
-				1,
-				"Google este un motor de căutare[...]ce ne este util la găsirea rapidă a informațiilor existente în web."),
-            new askOneQuestion("Care dintre următoarele nu este un browser?",
-                ["Chrome","Edge","Bing","Firefox"],
-                3,
-                "Bing este un motor de căutare."),
-            new askOneQuestion(" Transformarea numelui într-o adresă IP este responsabilitatea: ",
-				["serverului WEB ", "serverului DNS", "protocolului HTTPS"],
-				2,
-				"Serverul care deține aceste informații este un server DNS și este responsabil să știe sau să găsească pentru mine toate numerele (adresele IP) de care eu am nevoie pentru a naviga pe internet."),
-            new askOneQuestion("Dintre următoarele protocoale, cel mai sigur este: ",
-				["https", "http"],
-				1,
-				"În https, litera ''s'' înseamnă ''secure'' (sigur)."),
-            new askOneQuestion("Internetul are la bază protocolul",
-				["TCP", "IPv4", "World Wide Web ", "Instagram"],
-				2,
-				"IP înseamnă internet protocol"),
-            new askOneQuestion("Verificarea autenticității unui server se face folosind:",
-				["un nume de utilizator și o parolă complexă", "un certificat digital ", "o adresă de IP ", "un server DNS"],
-				2,
-				"În timpul realizării conexiunii calculatorul verifică autenticitatea site-ului, cerându-i un certificat digital calificat."),
-                
-		];
-
-		//write formatted questions into web page
-		for (f = 0; f < quiz[0].getTotalInstances(); f++) {
-			document.write(quiz[f].getFormattedText());
-		}
-	    </script>
-        </div>
-
-
-
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"><span>&#8679;</span></button>
 <script>
