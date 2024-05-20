@@ -1,0 +1,46 @@
+.slider-container {
+    position: absolute;
+    top:0%;
+    width: 100%;
+    height: calc(((15vw * 0.625) * 4) + 30px);
+    overflow: hidden;
+    margin:0;
+    padding: 0px;
+    left: 0;
+
+
+  }
+
+  .slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(2px);
+  }
+
+  .slider img.active {
+    opacity: 1;
+    filter: brightness(75%) blur(2px);
+  }
+
+  h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: monospace;
+    position: relative;
+    color: rgb(255, 0, 0);
+    margin-top: 250px;
+}
