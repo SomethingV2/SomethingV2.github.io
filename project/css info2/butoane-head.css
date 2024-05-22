@@ -39,7 +39,19 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   }
-  
+  .button5{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 
 .container { 
     display: flex; 
@@ -49,25 +61,13 @@
     margin-right: 80%;
 } 
 
-.button4{
-  background-color: rgb(0, 0, 0);
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-.button5{
+.button4{
+  width:100% ;
   background-color: rgb(0, 0, 0);
   border: none;
   color: rgb(255, 255, 255);
-  padding: 15px 25px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -81,7 +81,7 @@
   display: flex; 
   justify-content: space-between; 
   position: relative;
-  margin-left: 75%;
+  margin-left: 85%;
   margin-right: 0%;
   margin-top:-4.5%;
 } 

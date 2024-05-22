@@ -143,3 +143,54 @@
     margin-left: 32%;  
 
 }
+
+
+
+
+
+
+
+.button4{
+    background-color: rgb(206, 198, 187);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button4 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button4 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+} 
+.button4:hover span {
+    padding-right: 25px;
+} 
+.button4:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button4:hover {
+    background-color: #000000;
+    color: white;
+}  
+.but4{
+    position: relative;
+    margin-top: 0%;    
+    margin-left: 32%;
+    margin-bottom: 35%;
+}
