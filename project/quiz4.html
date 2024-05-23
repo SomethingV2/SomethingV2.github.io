@@ -1,0 +1,51 @@
+<html>
+    <link rel="stylesheet" href="jocuri/css quiz4/button.css">
+    <link rel="stylesheet" href="jocuri/css quiz4/text.css">
+
+    <script src="javascript/quiz.js"></script>
+
+    <h1 class="h1">Quiz mituri</h1>
+    <div class="container"> 
+        <a href="index.html" target="_self">
+          <button class="button button1">Home</button>
+        </a>
+        <a href="jocuri.html" target="_self">
+          <button class="button button2">jocuri</button>
+        </a>
+    </div>
+
+    <br>
+    <div class="text">
+    <div id="total_progress"> Raspunsuri corecte pana acum:...</div>
+    <hr>
+    <script>
+     //all questions are defined here:
+         var quiz = [
+             new askOneQuestion("Folosirea unei conexiuni wifi publice, într-un aeroport:",
+              ["Conduce automat la compromiterea parolelor tale", "Oferă posibilitatea hackerilor sa-ți preia controlul asupra dispozitivului pe care-l folosești", "Nu implică riscuri majore în cazul în care folosești produse software actualizate"],
+              3,
+             "explicatie"),
+             new askOneQuestion("O tehnologie actualizată de criptare a datelor:",
+                ["Nu este recomandată deoarece poate avea defecte ascunse ce nu au fost încă descoperite","Este preferată deoarece algoritmul de criptare este mai complex și cheia de criptare mai lungă, făcând practic imposibilă decriptarea datelor","Este inutilă deoarece tehnologiile mai vechi sunt mai bune"],
+              2,
+            ""),
+             new askOneQuestion("Bitcoin este:",
+                ["O înțelegere tacită între hackeri și comercianții de software piratat","O monedă virtuală folosită pentru plata unor bunuri și servicii","O tehnologie de criptare de ultimă generație"],
+                2,
+            ""),
+             new askOneQuestion("Dacă primești un apel de la un număr de telefon din Burkina Faso și vei suna înapoi pe acel număr, atunci:",
+                ["Parolele salvate în telefonul tău vor fi compromise","Ți se va șterge automat toată agenda telefonică și SMS-urile primite","Vei plăti o sumă mai mare pentru factura de telefonie","Ți se va virusa telefonul"],
+                3,
+            "" ),
+             new askOneQuestion("Linux este:",
+                ["Un sistem de operare","Un mediu de dezvoltare special creat pentru JavaScript","O monedă virtuală folosită pentru plata de bunuri și servicii ilicite","Un algoritm de criptare a datelor"],
+                1,
+            "")
+            ]
+
+            //write formatted questions into web page
+          for (f = 0; f < quiz[0].getTotalInstances(); f++) {
+              document.write(quiz[f].getFormattedText());
+           }
+    </script>
+</html>
