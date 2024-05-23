@@ -1,0 +1,49 @@
+<html>
+    <link rel="stylesheet" href="jocuri/css quiz3/button.css">
+    <link rel="stylesheet" href="jocuri/css quiz3/text.css">
+    
+    <script src="javascript/quiz.js"></script>
+
+        <h1 class="h1">Quiz securitate</h1>
+
+        <div class="container"> 
+            <a href="index.html" target="_self">
+              <button class="button button1">Home</button>
+            </a>
+            <a href="jocuri.html" target="_self">
+              <button class="button button2">jocuri</button>
+            </a>
+        </div>
+
+        <br>
+        <div class="text">
+        <div id="total_progress"> Raspunsuri corecte pana acum:...</div>
+        <hr>
+         <script>
+         //all questions are defined here:
+         var quiz = [
+             new askOneQuestion("Deși nu aștepți niciun colet, ai primit în căsuța ta de e-mail un mesaj care te informează că nu ai putut fi contactat de curier pentru livrarea unui pachet și ești invitat să accesezi un link pentru a confirma datele de livrare. Îl accesezi?",
+              ["Da", "Nu"],
+              2,
+             "Dacă nu aștepți niciun colet, nu ar ridica câteva întrebări faptul că ai primit un mail despre coletul tău ?"),
+              new askOneQuestion("În momentul în care încerci să deschizi pagina, îți apare în browser eroarea ”Lipsă conexiune la internet”. Este aceasta o încercare de a-ți fura datele personale? ",
+              ["Da", "Nu"],
+              2,
+              "”Lipsă conexiune la internet” înseamnă că ți-ai pierdut conexiunea la internet."),
+              new askOneQuestion("Pentru a nu uita parolele pe care le-ai setat:",
+              ["vei folosi aceeași parolă la toate site-urile ", "vei folosi un manager de parole", "vei seta parole ușor de reținut, cum ar fi numele tău și data nașterii"],
+              2,
+              "Dacă folosești aceeași parolă peste tot atunci trebuie spartă doar odată, iar parolele ușor de reținut sunt sparte foarte repede"),
+               new askOneQuestion("Care din următoarele adrese web îți ridică suspiciuni privind autenticitatea? ",
+               ["https://www.posta-romana.ro", "https://www.brico-depot.ro/customer/startpage/viev_product?id=17775 ", "https://olx-romania-online.myfreewebsite.com "],
+               3,
+               "Primul link este al poștei române, al doilea este al unui produs de pe site-ul celor de la brico, iar al treilea te duce spre un site făcut cu ajutorul MyFreeWebsite, unde oricine poate să facă o pagină web și să o numească oricum dorește."),
+           ];
+        
+          //write formatted questions into web page
+          for (f = 0; f < quiz[0].getTotalInstances(); f++) {
+              document.write(quiz[f].getFormattedText());
+           }
+         </script>
+         </div>
+</html>
