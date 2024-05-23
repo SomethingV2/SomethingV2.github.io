@@ -1,0 +1,11 @@
+Proiectul nostru își propune să prezinte provocările securității cibernetice în contextul utilizării tehnologiei și comunicațiilor în toate aspectele vieții cotidiene cât și măsurile ce pot fi luate de fiecare utilizator în vederea reducerii riscurilor asociate. El se adresează atât celor care acum fac primii pași în explorarea universului cibernetic cât și celor care au deja o experiență în utilizarea tehnicii de informatică și comunicații: cu toții vor avea posibilitatea de a învăța lucruri noi sau a-și diversifica orizontul cunoașterii în domeniul securității cibernetice
+
+Aplicația a fost gândită pentru a urmări două obiective principale:
+-	Prezentarea într-o manieră captivantă a noțiunilor securității cibernetice, folosind un limbaj simplu, ce nu necesită cunoștințe avansate în domeniul IT
+-	Verificarea cunoștințelor dobândite, la fianl prin intermediul testelor grilă  cu câteva întrebări din materialul prezentat și jocurilor interactive
+
+
+Fiind o aplicație realizată în echipă, pentru dezvoltarea codului și a conținutului a fost ales un  sistem ce permite subversionarea codului cât și lucrul simultan de către membrii echipei. Sistemul ales a fost GIT iar adresa proiectului a fost stabilită la https://github.com/SomethingV2/SomethingV2.github.io. Ca și realizare conținutului am folosit pagini statice de tip HTML/CSS iar pentru verificarea cunoștințelor dobândite am creat o clasă în limbajul de scripting JavaScript, aceasta fiind apoi inclusă în pagina HTML, iar jocurile au fost realizate cu ajutorul site-ului Wordwall .
+
+
+Fiind o aplicație ce folosește exclusiv tehnologia HTML și Javascript, pentru utilizare necesită orice browser capabil să execute HTML5 și javascript. Pentru pornire, deschideți un browser și scrieți în acesta adresa https://somethingv2.github.io/project .
