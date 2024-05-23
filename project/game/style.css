@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(206, 198, 187);
+}
+
+.iframe{
+    text-align: center;
+}
+
+.button4{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+.button4:hover {
+    background-color: rgb(255, 241, 221);
+    color: #000000;
+    border: 2px solid black;
+}
+
+.button4{
+  width: 200px;
+  position: absolute;
+  top: 0.5%;
+}
+
+
+
+
+.button5{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+.button5:hover {
+    background-color: rgb(255, 241, 221);
+    color: #000000;
+    border: 2px solid black;
+}
+
+.button5{
+  width: 200px;
+  position: absolute;
+  top: 8%;
+}
+
